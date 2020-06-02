@@ -1,0 +1,60 @@
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\hypersetup{unicode = true}
+
+\usetheme{Madrid}
+\usepackage{colortbl} %use in the preamble
+  
+\definecolor{cvut_navy}{HTML}{0065BD}
+\definecolor{cvut_blue}{HTML}{6AADE4}
+\definecolor{cvut_gray}{HTML}{156570}
+
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=cvut_blue}
+\setbeamercolor*{palette primary}{bg=cvut_navy,fg=gray!20!white}
+\setbeamercolor*{palette secondary}{bg=cvut_blue,fg=white}
+\setbeamercolor*{palette tertiary}{parent=palette primary}
+\setbeamercolor*{palette quaternary}{fg=green,bg=gray!5!white}
+
+\setbeamercolor*{sidebar}{fg=cvut_navy,bg=gray!15!white}
+
+
+\setbeamercolor{titlelike}{parent=palette primary}
+\setbeamercolor{frametitle}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamertemplate{navigation symbols}{} 
+
+
+\usepackage{eqnarray,amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lmodern} % pro pismo tucne a zaroven kurziva
+\usepackage{bm} % pro pismo tucne a zaroven kurziva
+\usepackage{epstopdf}
+\usepackage{changepage}
+\usepackage{array,booktabs}
+
+% definice makra pro české uvozovky:
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\bq{\mbox{\kern.1ex\protect\raisebox{-1.3ex}[0pt][0pt]{''}\kern-.1ex}}
+\def\eq{\mbox{\kern-.1ex``\kern.1ex}}
+\def\ifundefined#1{\expandafter\ifx\csname#1\endcsname\relax }%
+\ifundefined{uv}%
+        \gdef\uv#1{\bq #1\eq}
+\fi
+% konec .... použití makra pro psaní český uvozovek: \uv{text uvnitř uvozovek}
+
+%====================================================
+%========== DEFINITION OF AUTHORS ETC...=============
+%====================================================
+%\author[Lukáš Kunt]{Lukáš Kunt}
+\author[Lukáš Kunt]{{\large Lukáš Kunt} {\small \texorpdfstring{\vspace{5mm} \newline Vedoucí práce: RNDr. Petr Štěpán, Ph.D. }{}}}
+\institute[ČVUT]{České vysoké učení technické v Praze \\ Fakulta elektrotechnická}
+\title[Detekce objektů z hloubkové kamery]{Detekce objektů z hloubkové kamery}
+%\subtitle{Subtitle}
+\date[00.00.2020]{00.00.2020}
